@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    --fonte1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Indie Flower', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100%vh;
+    background-color: darkolivegreen;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw; /*10% da largura da tela*/
+}
+
+header > p {
+    padding-bottom: 30px;
+    font-family: var(--fonte2);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vh;
+}
+
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: black;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(66, 66, 66, 0.712);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block; /*transforma em caixa que se adapta ao formato do conteudo*/
+    padding: 5px;
+    background-color: rgba(34, 33, 33, 0.438);
+}
+
+section#saudade{
+    text-align: right;
+    padding: 0vh 5vh 10vh 0vh;
+}
+
+section#img01 {
+    background-image: url("../images/img01.jpg");
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img02 {
+    background-image: url("../images/img02.jpg");
+    background-size: cover;
+
+}
+
+section#img03 {
+    background-image: url("../images/img03.jpg");
+    background-size: cover;
+
+}
+
+footer a:hover {
+    color: yellowgreen;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
